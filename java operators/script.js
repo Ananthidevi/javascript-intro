@@ -40,14 +40,14 @@ console.log("Triple eqaul to ",i===j);
 let login = false;
 login ? console.log("granted") : console.log("declined");
 
-//exressiion - string concatenation
+//expression - string concatenation
 //, + ,``
 let username = "Ananthi";
 console.log("hello welcome", username);
 console.log("hello welcome " +  username);
 console.log(`hello welcome ${username}`);
 
-//iv prob for ternary operators//
+//interview prob for ternary operators//
 //prob 1 vote eligibility functionlity//
 //prob 2 authorization for admin and user//
 
