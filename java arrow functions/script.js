@@ -54,4 +54,4 @@ welcome(name);//arguments
 
         }
     }
-    console.log(loginUser("Ananthi")("An@123"));
+    console.log(loginUser("Ananthi")("An@123")); 
