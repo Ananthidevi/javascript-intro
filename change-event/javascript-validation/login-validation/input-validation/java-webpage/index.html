@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src ="script.js"></script>
+    <link rel ="stylesheet" href = "style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div id = "cart">
+        <h4>Your cart</h4>
+        <div class = "cart-item" id = "productA">Watch: 0</div>
+          <div class = "cart-item" id = "productB">Phone: 0</div>
+          <div class = "cart-item" id = "productC">Headset: 0</div>
+            <hr>
+            <!--hr-horizontical line-->
+            <strong>Total:  $<span id ="totalPrice">0</span></strong>
+    </div>
+    <h3>All Products</h3>
+    <div class ="products-container">
+
+        <div class = "product-card">
+           
+            <img src = "https://m.media-amazon.com/images/I/41g06cAmgkL._SX300_SY300_QL70_FMwebp_.jpg" height= 250px  alt = "Watch">
+        <div class = "Details">
+            <h3>Premium Watch</h3>
+            <h4>$ 1399</h4>
+            <button onclick = "addToCart('A')">Add to cart</button>
+        </div>
+        </div>
+         <div class = "product-card">
+           
+            <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHHsB1k0ydTmZ7BmPonI5LIxGV6KRFBlbxKQ&s"  alt = "Phone">
+        <div class = "Details">
+            <h3>Phone</h3>
+            <h4>$ 19999</h4>
+            <button onclick ="addToCart('B')">Add to cart</button>
+        </div>
+        </div>
+        <div class = "product-card">
+           
+            <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHHsB1k0ydTmZ7BmPonI5LIxGV6KRFBlbxKQ&s"  alt = "Headset">
+        <div class = "Details">
+            <h3>Phone</h3>
+            <h4>$ 19999</h4>
+            <button onclick ="addToCart('C')">Add to cart</button>
+        </div>
+        </div>
+    </div>
+    
+</body>
+</html>
