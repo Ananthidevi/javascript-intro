@@ -2,6 +2,7 @@ let productA = 0;
 let productB = 0;
 let productC = 0;
 let Total = 0;
+//seting initial variable
 
 function addToCart(product){
     if(product === 'A'){
