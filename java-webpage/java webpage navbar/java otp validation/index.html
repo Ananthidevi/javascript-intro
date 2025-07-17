@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP</title>
+</head>
+<body>
+
+    <button onclick="generateOTP()">Generate OTP</button><br><br>
+
+    <input type = "text" id = "otpinput" placeholder="Enter your OTP">
+    <button onclick="validateOTP()">validate OTP</button>
+
+
+    <p id = "result">
+
+    </p>
+
+    <script>
+        // local storage of script
+
+        function generateOTP(){
+            const otp = Math.floor(1000 + Math.random() * 9000);
+            //4 digit number
+            localStorage.setItem('generated-otp', otp)
+            alert("OTP generated check your message");
+        }
+        function validateOTP(){
+            const otpinput =document.getElementById("otpinput").value;
+            const generatedotp = localStorage.getItem('generated-otp');
+
+            if(otpinput === generatedotp){
+                document.getElementById("result").innerText = "OTP is valid";
+
+            }else{
+               document.getElementById("result").innerText = "OTP is  not valid"; 
+            }
+        }
+    </script>
+    <!-- that otp in inspect->application->localstorage -->
+    
+</body>
+</html>
