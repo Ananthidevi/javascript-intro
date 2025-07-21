@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded" , function(){
     //dom elemnts to select our id
-    const productContainer = document.getElementById(" productContainer");
+    const productContainer = document.getElementById("productContainer");
     fetch("https://fakestoreapi.com/products").then(res => res.json())
     .then(data => {
         data.forEach(product => {

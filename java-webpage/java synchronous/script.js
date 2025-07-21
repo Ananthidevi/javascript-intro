@@ -14,7 +14,7 @@ async function fetchData(){
     try{
         const res = await fetch("https://fakestoreapi.com/products")
         if(!res.ok){
-            throw new Error("API fething error");
+            throw new Error("API fetching error");
         }
         const products = await res.json()
         displayData(products)
